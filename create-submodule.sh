@@ -11,13 +11,22 @@ REPO_NAME="day-$DAY_NUM"
 
 # Create new repository on GitHub
 echo "Creating repository $REPO_NAME..."
-gh repo create "$REPO_NAME" --private --confirm
+gh repo create "$REPO_NAME" --private
 
-# Get the user's GitHub username
-GITHUB_USER=$(gh api user -q .login)
+# Clone the repository first
+echo "Cloning repository..."
+git clone "https://github.com/$(gh api user -q .login)/$REPO_NAME.git"
 
-# Add as submodule using HTTPS
+# Create README and initial commit
+cd "$REPO_NAME"
+echo "# Advent of Code 2024 - Day $DAY_NUM" > README.md
+git add README.md
+git commit -m "Initial commit"
+git push
+cd ..
+
+# Now add it as a submodule
 echo "Adding as submodule..."
-git submodule add "https://github.com/$GITHUB_USER/$REPO_NAME.git" "$REPO_NAME"
+git submodule add "https://github.com/$(gh api user -q .login)/$REPO_NAME.git" "$REPO_NAME"
 
 echo "Successfully created and added $REPO_NAME as a submodule"
