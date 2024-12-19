@@ -1,3 +1,15 @@
 [submodule "day-1"]
 	path = day-1
 	url = https://github.com/nickm8/day-1.git
+[submodule "day-2"]
+	path = day-2
+	url = https://github.com/nickm8/day-2.git
+[submodule "day-3"]
+	path = day-3
+	url = https://github.com/nickm8/day-3.git
+[submodule "day-4"]
+	path = day-4
+	url = https://github.com/nickm8/day-4.git
+[submodule "day-5"]
+	path = day-5
+	url = https://github.com/nickm8/day-5.git
