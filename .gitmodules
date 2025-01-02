@@ -19,3 +19,30 @@
 [submodule "day-7"]
 	path = day-7
 	url = https://github.com/nickm8/day-7.git
+[submodule "day-8"]
+	path = day-8
+	url = https://github.com/nickm8/day-8.git
+[submodule "day-10"]
+	path = day-10
+	url = https://github.com/nickm8/day-10.git
+[submodule "day-9"]
+	path = day-9
+	url = https://github.com/nickm8/day-9.git
+[submodule "day-11"]
+	path = day-11
+	url = https://github.com/nickm8/day-11.git
+[submodule "day-12"]
+	path = day-12
+	url = https://github.com/nickm8/day-12.git
+[submodule "day-13"]
+	path = day-13
+	url = https://github.com/nickm8/day-13.git
+[submodule "day-14"]
+	path = day-14
+	url = https://github.com/nickm8/day-14.git
+[submodule "day-15"]
+	path = day-15
+	url = https://github.com/nickm8/day-15.git
+[submodule "day-16"]
+	path = day-16
+	url = https://github.com/nickm8/day-16.git
