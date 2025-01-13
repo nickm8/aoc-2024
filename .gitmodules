@@ -46,3 +46,6 @@
 [submodule "day-16"]
 	path = day-16
 	url = https://github.com/nickm8/day-16.git
+[submodule "day-17"]
+	path = day-17
+	url = https://github.com/nickm8/day-17.git
